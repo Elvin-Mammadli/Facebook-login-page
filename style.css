@@ -12,19 +12,24 @@ body {
 main {
     background-color: #f0f2f5;
     width: 100%;
+    padding: 72px 0 112px 0;
+    display: block;
 }
 
 .container {
-    width: 80%;
+    max-width: 980px;
     margin: 0 auto;
+    padding: 20px 0 20px 0;
 }
 
 .content {
     display: flex;
+    justify-content: space-between;
 }
 
 div.left {
     width: 580px;
+    line-height: 100px;
 }
 
 h1.facebook-logo {
@@ -44,6 +49,7 @@ h2.facebook-slogan {
 
 div.right {
     width: 396px;
+    height: 496px;
 }
 
 div.form {
@@ -51,7 +57,6 @@ div.form {
     padding: 10px 0 24px;
     margin-top: 40px;
     text-align: center;
-    /* box-shadow: 0 1px 16px -10px; */
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     background-color: white;
     border-radius: 8px;
@@ -61,15 +66,8 @@ div.form {
     color: rgb(146, 146, 146);
 }
 
-div.input-boxes > * {
-    display: block;
-}
-
-div.input-boxes {
-    width: 396px;
-    height: 132px;
-    text-align: center;
-    padding: 6px 0;
+div.input-boxes input {
+    margin: 6px 0;
 }
 
 div.login-button {
@@ -84,7 +82,6 @@ input.inputs {
     padding: 14px 16px;
     border-radius: 6px;
     border: 1px solid #dddfe2;
-    margin: 10px auto;
     font-family: inherit;
     font-size: 17px;
 }
@@ -101,6 +98,11 @@ button.login {
     border: none
 }
 
+button.login:hover {
+    background-color: #166fe5;
+    cursor: pointer;
+}
+
 div.forgot-password {
     width: 396px;
     height: 18.4px;
@@ -111,6 +113,10 @@ a.fpass {
     color: rgb(24, 119, 242);
     text-decoration-line: none;
     font-size: 14px;
+}
+
+a.fpass:hover {
+    text-decoration: underline;
 }
 
 div.line {
@@ -141,47 +147,95 @@ a.create-new-account {
     font-weight: bold;
 }
 
+a.create-new-account:hover {
+    background-color: #36a420;
+}
+
 div.create-page {
-    width: 396px;
-    height: 18.4px;
     margin: 28px 0 0;
     color: black;
     font-size: 14px;
     font-weight: normal;
+    text-align: center;
 }
 
-a.CreatePage {
+a.create-page {
     font-weight: 600;
     text-decoration: none;
     color: black;
+}
+
+a.create-page:hover {
+    text-decoration: underline;
 }
 
 footer {
     padding-top: 20px;
     width: 100%;
     height: 180px;
-    border: 1px solid black;
-    background-color: pink;
+    display: flex;
+    background-color: white;
 }
 
-/* .container2 > ul li {
+.footer-container {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.languages {
     display: inline-block;
+    margin-left: -10px;
+}
+
+.languages > li a {
+    padding-left: 10px;
+}
+
+.footer-container > ul li {
+    display: inline;
     font-size: 12px;
     font-family: Helvetica, sans-serif;
-} */
+}
 
-.footer-pages li {
-    display: inline-block;
-    padding-bottom:10px;
+.footer-container > ul > li > a {
+    text-decoration: none;
+    color: #8a8d91;
 }
 
 .line-bottom {
-    width: 60rem;
-    height: 1px;
-    background-color: #dadde1;
-    margin: 8px;
+    max-width: 980px;
+    border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
 }
 
+.plus-button {
+    width: 30px;
+    font-size: 14px;
+    padding: 0 5px;
+    font-weight: 800;
+    color: #8a8d91;
+    border-color: none;
+}
+
+.footer-pages {
+    margin-left: -20px;
+    width: 1000px;
+    height: 57.6px;
+}
+
+ul.footer-pages > li a {
+    padding-left: 20px;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #e5e7e9;
+    position: absolute;
+    bottom: 20px;
+}
 
 
 
