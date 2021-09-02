@@ -1,241 +1,216 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: rgb(243, 243, 243);
+  background-color: rgb(243, 243, 243);
 }
 
 main {
-    background-color: #f0f2f5;
-    width: 100%;
-    padding: 72px 0 112px 0;
-    display: block;
+  background-color: #f0f2f5;
+  width: 100%;
+  padding: 72px 0 112px 0;
 }
 
 .container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 20px 0 20px 0;
+  max-width: 69%;
+  margin: 0 auto;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  height: calc(83vh - 180px);
 }
 
 div.left {
-    width: 580px;
-    line-height: 100px;
+  width: 580px;
 }
 
 h1.facebook-logo {
-    font-size: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(24, 119, 242);
-    padding: 95px 0 0;
-    margin-top: 0;
+  font-size: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(24, 119, 242);
+  margin-top: 20%;
 }
 
 h2.facebook-slogan {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 28px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  margin-top: 17px;
 }
 
 div.right {
-    width: 396px;
-    height: 496px;
+  width: 396px;
 }
 
 div.form {
-    width: 396px;
-    padding: 10px 0 24px;
-    margin-top: 40px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    background-color: white;
-    border-radius: 8px;
+  padding: 10px 0 24px;
+  margin-top: 40px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  background-color: white;
+  border-radius: 8px;
 }
 
-::placeholder {
-    color: rgb(146, 146, 146);
+.input-box::placeholder {
+  color: rgb(146, 146, 146);
 }
 
 div.input-boxes input {
-    margin: 6px 0;
+  margin: 6px 0;
 }
 
 div.login-button {
-    width: 396px;
-    height: 54px;
-    padding: 6px 0 0;
+  width: 396px;
+  height: 54px;
+  margin-top: 10px;
 }
 
-input.inputs {
-    width: 364px;
-    height: 52px;
-    padding: 14px 16px;
-    border-radius: 6px;
-    border: 1px solid #dddfe2;
-    font-family: inherit;
-    font-size: 17px;
+input.input-box {
+  width: 92%;
+  height: 52px;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  font-family: inherit;
+  font-size: 17px;
 }
 
 button.login {
-    width: 364px;
-    height: 48px;
-    padding: 0 16px;
-    background-color: rgb(24, 119, 242);
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
-    border-radius: 6px;
-    border: none
+  width: 92%;
+  height: 48px;
+  padding: 0 16px;
+  background-color: rgb(24, 119, 242);
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
 }
 
 button.login:hover {
-    background-color: #166fe5;
-    cursor: pointer;
+  background-color: #166fe5;
+  cursor: pointer;
 }
 
 div.forgot-password {
-    width: 396px;
-    height: 18.4px;
-    margin: 16px 0 0;
+  margin: 16px 0 0;
 }
 
-a.fpass {
-    color: rgb(24, 119, 242);
-    text-decoration-line: none;
-    font-size: 14px;
+a.forgot-password {
+  display: block;
+  margin-top: 16px;
+  color: rgb(24, 119, 242);
+  text-decoration-line: none;
+  font-size: 14px;
 }
 
-a.fpass:hover {
-    text-decoration: underline;
+a.forgot-password:hover {
+  text-decoration: underline;
 }
 
 div.line {
-    width: 80%;
-    margin: 20px auto;
-    height: 1px;
-    background-color: black;
-    opacity: .2;
-}   
+  width: 80%;
+  margin: 20px auto;
+  height: 1px;
+  background-color: black;
+  opacity: 0.2;
+}
 
 div.create-new-account {
-    width: 396px;
-    height: 54px;
-    padding: 6px 0 0;
+  height: 54px;
+  padding: 6px 0 0;
 }
 
 a.create-new-account {
-    width: 196.69px;
-    height: 48px;
-    padding: 0 16px;
-    background-color: rgb(66, 183, 42);
-    color: #FFFFFF;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 17px;
-    line-height: 48px;
-    display: inline-block;
-    font-weight: bold;
+  height: 48px;
+  padding: 0 16px;
+  background-color: rgb(66, 183, 42);
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 48px;
+  display: inline-block;
+  font-weight: bold;
 }
 
 a.create-new-account:hover {
-    background-color: #36a420;
+  background-color: #36a420;
 }
 
 div.create-page {
-    margin: 28px 0 0;
-    color: black;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: center;
+  margin: 28px 0 0;
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
 }
 
 a.create-page {
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a.create-page:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer {
-    padding-top: 20px;
-    width: 100%;
-    height: 180px;
-    display: flex;
-    background-color: white;
-}
-
-.footer-container {
-    margin: 0 auto;
-    width: 980px;
-    position: relative;
+  padding-top: 20px;
+  height: 180px;
+  display: flex;
+  background-color: white;
 }
 
 .languages {
-    display: inline-block;
-    margin-left: -10px;
+  display: inline-block;
+  margin-left: -10px;
 }
 
 .languages > li a {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
-.footer-container > ul li {
-    display: inline;
-    font-size: 12px;
-    font-family: Helvetica, sans-serif;
+.container > ul li {
+  display: inline;
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
 }
 
-.footer-container > ul > li > a {
-    text-decoration: none;
-    color: #8a8d91;
+.container > ul > li > a {
+  text-decoration: none;
+  color: #8a8d91;
 }
 
-.line-bottom {
-    max-width: 980px;
-    border-bottom: 1px solid #dddfe2;
-    font-size: 1px;
-    height: 8px;
-    margin-bottom: 8px;
+.footer-line {
+  max-width: 92%;
+  border-bottom: 1px solid #dddfe2;
+  font-size: 1px;
+  height: 8px;
+  margin-bottom: 8px;
 }
 
 .plus-button {
-    width: 30px;
-    font-size: 14px;
-    padding: 0 5px;
-    font-weight: 800;
-    color: #8a8d91;
-    border-color: none;
+  width: 30px;
+  font-size: 14px;
+  padding: 0 5px;
+  font-weight: 800;
+  color: #8a8d91;
+  border-color: none;
 }
 
-.footer-pages {
-    margin-left: -20px;
-    width: 1000px;
-    height: 57.6px;
-}
-
-ul.footer-pages > li a {
-    padding-left: 20px;
+ul.footer-pages > li {
+  margin-right: 20px;
 }
 
 .copyright {
-    font-size: 11px;
-    color: #e5e7e9;
-    position: absolute;
-    bottom: 20px;
+  font-size: 11px;
+  color: #7f8285;
+  position: absolute;
+  bottom: 0px;
 }
-
-
-
